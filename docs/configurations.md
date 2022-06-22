@@ -1,44 +1,44 @@
 # Configurations
 
-* [About Hugo Configurations](#about-hugo-configurations)
-  * [Analytics](#analytics)
-    * [Google Analytics](#google-analytics)
-    * [Google Tag Manager](#google-tag-manager)
-    * [Fathom Analytics](#fathom-analytics)
-    * [Plausible Analytics](#plausible-analytics)
-    * [Goat Counter](#goat-counter)
-    * [Cloudflare](#cloudflare)
-    * [Matomo](#matomo)
-    * [Application Insights](#application-insights)
-  * [Commenting Systems](#commenting-systems)
-    * [Disqus](#disqus)
-    * [Commento](#commento)
-    * [Utterances](#utterances)
-* [Theme Parameters](#theme-parameters)
-  * [Social Icons Configuration](#social-icons-configuration)
-  * [Menu Items Configurations](#menu-items-configurations)
-  * [CSP](#csp)
-* [Complete Example](#complete-example)
-* [Front Matter](#front-matter)
-  * [Posts](#posts)
+-   [About Hugo Configurations](#about-hugo-configurations)
+    -   [Analytics](#analytics)
+        -   [Google Analytics](#google-analytics)
+        -   [Google Tag Manager](#google-tag-manager)
+        -   [Fathom Analytics](#fathom-analytics)
+        -   [Plausible Analytics](#plausible-analytics)
+        -   [Goat Counter](#goat-counter)
+        -   [Cloudflare](#cloudflare)
+        -   [Matomo](#matomo)
+        -   [Application Insights](#application-insights)
+    -   [Commenting Systems](#commenting-systems)
+        -   [Disqus](#disqus)
+        -   [Commento](#commento)
+        -   [Utterances](#utterances)
+-   [Theme Parameters](#theme-parameters)
+    -   [Social Icons Configuration](#social-icons-configuration)
+    -   [Menu Items Configurations](#menu-items-configurations)
+    -   [CSP](#csp)
+-   [Complete Example](#complete-example)
+-   [Front Matter](#front-matter)
+    -   [Posts](#posts)
 
 ## About Hugo Configurations
 
 This theme supports:
 
-* Analytics
-  * [Google Analytics](https://developers.google.com/analytics)
-  * [Google Tag Manager](https://developers.google.com/tag-manager)
-  * [Fathom Analytics](https://usefathom.com/)
-  * [Plausible Analytics](https://plausible.io/)
-  * [Goat Counter](https://www.goatcounter.com/)
-  * [Cloudflare](https://www.cloudflare.com/analytics/)
-  * [Matomo](https://matomo.org/)
-  * [Application Insights](https://azure.com/)
-* Commenting Systems
-  * [Disqus](https://disqus.com/)
-  * [Commento](https://commento.io/)
-  * [Utterances](https://utteranc.es/)
+-   Analytics
+    -   [Google Analytics](https://developers.google.com/analytics)
+    -   [Google Tag Manager](https://developers.google.com/tag-manager)
+    -   [Fathom Analytics](https://usefathom.com/)
+    -   [Plausible Analytics](https://plausible.io/)
+    -   [Goat Counter](https://www.goatcounter.com/)
+    -   [Cloudflare](https://www.cloudflare.com/analytics/)
+    -   [Matomo](https://matomo.org/)
+    -   [Application Insights](https://azure.com/)
+-   Commenting Systems
+    -   [Disqus](https://disqus.com/)
+    -   [Commento](https://commento.io/)
+    -   [Utterances](https://utteranc.es/)
 
 ### Analytics
 
@@ -127,40 +127,40 @@ Follow [these steps](https://gohugo.io/content-management/comments/#configure-di
 
 These are all the parameters used by `hugo-coder` theme.
 
-| Name                          | Type   | Required | Description                                      | Default                          | Example                                          |
-| ----------------------------- | ------ | -------- | ------------------------------------------------ | -------------------------------- | ------------------------------------------------ |
-| author                        | string | Yes      | Author name.                                     |                                  | `"John Doe"`                                     |
-| info                          | string | Yes      | An headline, job title or similar.               |                                  | `"Full Stack Developer"`                         | 
-| description                   | string | Yes      | Description of the site.                         |                                  | `"John Doe's personal website"`                  |
-| keywords                      | string | Yes      | Site keywords.                                   |                                  | `"blog,developer,personal"`                      |
-| avatarURL                     | string | No       | Photo of the author.                             |                                  | `"images/avatar.jpg"`                            | 
-| gravatar                      | string | No       | Gravatar photo of the author                     |                                  | `"john.doe@example.com"`                         | 
-| favicon_32                    | string | No       | Custom path to a 32x32 favicon.                  | `"/img/favicon-32x32.png"`       | `"/img/favicon-32x32.png"`                       |
-| favicon_16                    | string | No       | Custom path to a 16x16 favicon.                  | `"/img/favicon-16x16.png"`       | `"/img/favicon-16x16.png"`                       |
-| touchIcon                     | string | No       | Custom path to a touch-icon                      | `"/images/apple-touch-icon.png"` | `"/images/apple-touch-icon.png"`                 |
-| since                         | string | No       | Date shown in the footer before now year         |                                  | `"2020"`                                         |
-| maxSeeAlsoItems               | number | No       | Series see also post count                       | `5`                              | `10`                                             |
-| commit                        | string | No       | Show the last git commit in the footer           |                                  | `"https://github.com/luizdepra/hugo-coder/tree/"`|
-| rtl                           | bool   | No       | Enable the Right To Left mode.                   | `false`                          | `true` or `false`                                |
-| math                          | bool   | No       | Enable MathJax Module and add JS into your site. | `false`                          | `true` or `false`                                |
-| katex                         | bool   | No       | Enable katex for all content types.              | `false`                          | `true` or `false`                                |
-| colorScheme                   | string | No       | Specify light/dark colorscheme                   | `"auto"`                         | `"auto"` or `"light"` or `"dark"`                |
-| hideColorSchemeToggle         | bool   | No       | If true, hides the color sheme toggle            | `false`                          | `true` or `false`                                |
-| customCSS                     | list   | No       | Add extra CSS files to the website.              | []                               | `["css/extra-style.css"]`                        |
-| customSCSS                    | list   | No       | Add extra SCSS files to the website.             | []                               | `["scss/extra-style.scss"]`                      |
-| customJS                      | list   | No       | Add extra JS files to the website.               | []                               | `["js/extra-script.js"]`                         |
-| enableTwemoji                 | bool   | No       | Adds support for Twemoji                         | `false`                          | `true` or `false`                                |
+| Name                  | Type   | Required | Description                                      | Default                          | Example                                           |
+| --------------------- | ------ | -------- | ------------------------------------------------ | -------------------------------- | ------------------------------------------------- |
+| author                | string | Yes      | Author name.                                     |                                  | `"John Doe"`                                      |
+| info                  | string | Yes      | An headline, job title or similar.               |                                  | `"Full Stack Developer"`                          |
+| description           | string | Yes      | Description of the site.                         |                                  | `"John Doe's personal website"`                   |
+| keywords              | string | Yes      | Site keywords.                                   |                                  | `"blog,developer,personal"`                       |
+| avatarURL             | string | No       | Photo of the author.                             |                                  | `"images/avatar.jpg"`                             |
+| gravatar              | string | No       | Gravatar photo of the author                     |                                  | `"john.doe@example.com"`                          |
+| favicon_32            | string | No       | Custom path to a 32x32 favicon.                  | `"/img/favicon-32x32.png"`       | `"/img/favicon-32x32.png"`                        |
+| favicon_16            | string | No       | Custom path to a 16x16 favicon.                  | `"/img/favicon-16x16.png"`       | `"/img/favicon-16x16.png"`                        |
+| touchIcon             | string | No       | Custom path to a touch-icon                      | `"/images/apple-touch-icon.png"` | `"/images/apple-touch-icon.png"`                  |
+| since                 | string | No       | Date shown in the footer before now year         |                                  | `"2020"`                                          |
+| maxSeeAlsoItems       | number | No       | Series see also post count                       | `5`                              | `10`                                              |
+| commit                | string | No       | Show the last git commit in the footer           |                                  | `"https://github.com/luizdepra/hugo-coder/tree/"` |
+| rtl                   | bool   | No       | Enable the Right To Left mode.                   | `false`                          | `true` or `false`                                 |
+| math                  | bool   | No       | Enable MathJax Module and add JS into your site. | `false`                          | `true` or `false`                                 |
+| katex                 | bool   | No       | Enable katex for all content types.              | `false`                          | `true` or `false`                                 |
+| colorScheme           | string | No       | Specify light/dark colorscheme                   | `"auto"`                         | `"auto"` or `"light"` or `"dark"`                 |
+| hideColorSchemeToggle | bool   | No       | If true, hides the color sheme toggle            | `false`                          | `true` or `false`                                 |
+| customCSS             | list   | No       | Add extra CSS files to the website.              | []                               | `["css/extra-style.css"]`                         |
+| customSCSS            | list   | No       | Add extra SCSS files to the website.             | []                               | `["scss/extra-style.scss"]`                       |
+| customJS              | list   | No       | Add extra JS files to the website.               | []                               | `["js/extra-script.js"]`                          |
+| enableTwemoji         | bool   | No       | Adds support for Twemoji                         | `false`                          | `true` or `false`                                 |
 
 ### Social Icons Configuration
 
 Social Icons are optional. To use them you will need to set at least all the following required parameters for each icon.
 
-| Configuration  | Type   | Required | Description                              | Example                         | 
-| -------------- | ------ | -------- | ---------------------------------------- | ------------------------------- |
-| name           | string | Yes      | Icon name.                               | `"Github"`                      |
-| icon           | string | Yes      | ForkAwesome icon classes.                | `"fa fa-github"`                |
-| weight         | int    | Yes      | Icon order.                              | `1`                             |
-| url            | string | Yes      | URL to redirect.                         | `"https://github.com/johndoe/"` |
+| Configuration | Type   | Required | Description               | Example                         |
+| ------------- | ------ | -------- | ------------------------- | ------------------------------- |
+| name          | string | Yes      | Icon name.                | `"Github"`                      |
+| icon          | string | Yes      | ForkAwesome icon classes. | `"fa fa-github"`                |
+| weight        | int    | Yes      | Icon order.               | `1`                             |
+| url           | string | Yes      | URL to redirect.          | `"https://github.com/johndoe/"` |
 
 An example:
 
@@ -186,14 +186,14 @@ An example:
 
 Menu Items are optional. To use them you will need to set all the following required parameters for each icon.
 
-| Configuration  | Type   | Required | Description                              | Example                         | 
-| -------------- | ------ | -------- | ---------------------------------------- | ------------------------------- |
-| name           | string | Yes      | Menu Item name.                          | `"Posts"`                       |
-| weight         | int    | Yes      | Menu Item order.                         | `1`                             |
-| url            | string | Yes      | URL to redirect.                         | `"/posts/"`                     |
-| target         | string | No       | URL target attribute.                    | `"_blank"`                      |
-| rel            | string | No       | URL rel attribute.                       | `"alternate"`                   |
-| type           | string | No       | URL type attribute.                      | `"application/rss+xml"`         |
+| Configuration | Type   | Required | Description           | Example                 |
+| ------------- | ------ | -------- | --------------------- | ----------------------- |
+| name          | string | Yes      | Menu Item name.       | `"Posts"`               |
+| weight        | int    | Yes      | Menu Item order.      | `1`                     |
+| url           | string | Yes      | URL to redirect.      | `"/posts/"`             |
+| target        | string | No       | URL target attribute. | `"_blank"`              |
+| rel           | string | No       | URL rel attribute.    | `"alternate"`           |
+| type          | string | No       | URL type attribute.   | `"application/rss+xml"` |
 
 An example:
 
@@ -212,17 +212,17 @@ An example:
 
 CSP stands for [Content Security Policy](https://developers.google.com/web/fundamentals/security/csp). These configurations are optional. To use them you will need to set all the following required parameters. See [here](https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources) for reference.
 
-| Configuration  | Type        | Required | Description | Example                         | 
-| -------------- | ----------- | -------- | ----------- | ------------------------------- |
-| childsrc       | string list | Yes      |             | `["'self'"]`                    |
-| fontsrc        | string list | Yes      |             | `["'self'"]`                    |
-| formaction     | string list | Yes      |             | `["'self'"]`                    |
-| framesrc       | string list | Yes      |             | `["'self'"]`                    |
-| imgsrc         | string list | Yes      |             | `["'self'"]`                    |
-| objectsrc      | string list | Yes      |             | `["'self'"]`                    |
-| stylesrc       | string list | Yes      |             | `["'self'"]`                    |
-| scriptsrc      | string list | Yes      |             | `["'self'"]`                    |
-| prefetchsrc    | string list | Yes      |             | `["'self'"]`                    |
+| Configuration | Type        | Required | Description | Example      |
+| ------------- | ----------- | -------- | ----------- | ------------ |
+| childsrc      | string list | Yes      |             | `["'self'"]` |
+| fontsrc       | string list | Yes      |             | `["'self'"]` |
+| formaction    | string list | Yes      |             | `["'self'"]` |
+| framesrc      | string list | Yes      |             | `["'self'"]` |
+| imgsrc        | string list | Yes      |             | `["'self'"]` |
+| objectsrc     | string list | Yes      |             | `["'self'"]` |
+| stylesrc      | string list | Yes      |             | `["'self'"]` |
+| scriptsrc     | string list | Yes      |             | `["'self'"]` |
+| prefetchsrc   | string list | Yes      |             | `["'self'"]` |
 
 An example:
 
@@ -333,22 +333,22 @@ Hugo documentation: https://gohugo.io/content-management/front-matter
 
 This theme includes one content type:
 
-* [Posts](#posts), useful to display blog posts
+-   [Posts](#posts), useful to display blog posts
 
 ### Posts
 
 These are the front matter variables used by `hugo-coder` theme.
 
-| Name             | Type   | Required | Description                                        | Default | Example                                                                       |
-| ---------------- | ------ | -------- | -------------------------------------------------- | ------- | ----------------------------------------------------------------------------- |
-| tags             | list   | No       | Add tag(s) to this post.                           |         | `["Hugo", "Go"]`                                                              |
-| categories       | list   | No       | Add categorie(s) to this post.                     |         | `["Hugo", "Go"]`                                                              |
-| series           | list   | No       | Add series to this post (used by OpenGraph).       |         | `["Theme Demo"]`                                                              |
-| author           | list   | No       | Add author to this post.                           |         | `["John Doe"]`                                                                |
-| externalLink     | string | No       | Link to an external post.                          |         | `"https://github.com/luizdepra/hugo-coder/wiki"`                              |
-| featuredImage    | string | No       | Link/path to add an image below post metadata.     |         | `"https://github.com/luizdepra/hugo-coder/blob/master/images/screenshot.png"` |
-| math             | bool   | No       | If true, MathJax is enabled only for this post.    | `false` | `true` or `false`                                                             |
-| katex            | bool   | No       | If true, katex is enabled only for this post.      | `false` | `true` or `false`                                                             |
-| disableComments  | bool   | No       | If true, comments are disabled.                    | `false` | `true` or `false`                                                             |
+| Name            | Type   | Required | Description                                     | Default | Example                                                                       |
+| --------------- | ------ | -------- | ----------------------------------------------- | ------- | ----------------------------------------------------------------------------- |
+| tags            | list   | No       | Add tag(s) to this post.                        |         | `["Hugo", "Go"]`                                                              |
+| categories      | list   | No       | Add categorie(s) to this post.                  |         | `["Hugo", "Go"]`                                                              |
+| series          | list   | No       | Add series to this post (used by OpenGraph).    |         | `["Theme Demo"]`                                                              |
+| author          | list   | No       | Add author to this post.                        |         | `["John Doe"]`                                                                |
+| externalLink    | string | No       | Link to an external post.                       |         | `"https://github.com/luizdepra/hugo-coder/wiki"`                              |
+| featuredImage   | string | No       | Link/path to add an image below post metadata.  |         | `"https://github.com/luizdepra/hugo-coder/blob/master/images/screenshot.png"` |
+| math            | bool   | No       | If true, MathJax is enabled only for this post. | `false` | `true` or `false`                                                             |
+| katex           | bool   | No       | If true, katex is enabled only for this post.   | `false` | `true` or `false`                                                             |
+| disableComments | bool   | No       | If true, comments are disabled.                 | `false` | `true` or `false`                                                             |
 
 > "tags", "categories", "series" and "authors" are taxonomies defined in the `config.toml` file.
